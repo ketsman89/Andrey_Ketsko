@@ -1,0 +1,30 @@
+#test{
+    color: darkslategrey;
+}
+h1{
+    text-align: center;
+    color: red;
+}
+p{
+    color: green;
+}
+.payment{
+    font-style: italic;
+    color: blue;
+}
+.vip{
+    font-weight: 900;
+    color: orange;
+}
+.one li{
+    color: red;
+}
+.two li{
+    color: blue;
+}
+.ttt{
+    color: darkgoldenrod;
+}
+p.ttt{
+    font-style: italic;
+}
