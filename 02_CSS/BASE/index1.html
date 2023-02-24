@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02_CSS BASE</title>
+    <style>
+        .card {
+            width: 140px;
+            height: 188px;
+            float: left;
+            background-color: red;
+            margin: 5px;
+        }
+
+        .cards-1 {
+            background-image: url("cards.png");
+            background-position: 140px -1593px;
+        }
+
+        .cards-2 {
+            background-image: url("cards.png");
+            background-position: 0px -1792px;
+        }
+
+        .cards-3 {
+            background-image: url("cards.png");
+            background-position: 283px -1394px;
+        }
+
+        .cards-4 {
+            background-image: url("cards.png");
+            background-position: -143px 387px
+        }
+
+        .cards-5 {
+            background-image: url("cards.png");
+            background-position: 0px 187px;
+        }
+        .superimposed{
+            padding-left: 50px;
+        }
+        .super{
+            margin-right: -50px;
+        }
+        .clear{
+            clear: both;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <h2>02. CSS. Фон, списки, контейнерный дизайн</h2>
+    <h3>Домашнее задание - базовое #1</h3>
+    <div class="simple">
+        <div class="card cards-1"></div>
+        <div class="card cards-2"></div>
+        <div class="card cards-3"></div>
+        <div class="card cards-4"></div>
+        <div class="card cards-5"></div>
+        <div class="clear"></div>
+    </div>
+    <hr>
+    <div class="superimposed">
+        <div class="card cards-1 super"></div>
+        <div class="card cards-2 super"></div>
+        <div class="card cards-3 super"></div>
+        <div class="card cards-4 super"></div>
+        <div class="card cards-5 super"></div>
+        <div class="clear"></div>
+    </div>
+    
+
+</body>
+
+</html>
