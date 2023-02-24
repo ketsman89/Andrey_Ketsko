@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Открытый урок</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .header{
+            background-color: #dfdfdf;
+            text-align: center;
+            height: 40px;
+            margin-top: 17px;
+        }
+        .main{
+            width: 700px;
+            background-color: #fef8e3;
+            float: left;
+            padding: 20px 20px 0;
+        }
+        .main h3{
+            text-align: center;
+            margin-bottom: 80px;
+        }
+        .main-block h3{
+            margin-bottom: 0;
+        }
+        .main-block{
+            background-color: #fcedb8;
+            height: 50px;
+            margin-bottom: 20px;
+            padding-top: 15px;            
+        }
+        .main-block-left{
+            float: left;
+            width: 310px;
+        }
+        .main-block-right{
+            float: right;
+            width: 310px;
+        }
+        .main-block-bottom{
+            clear: both;
+            
+        }
+        .sidebar{
+            width: 300px;
+            float: right;
+            background-color: #dfecca;
+            height: 261px;
+            padding-top: 20px;
+            text-align: center;
+        }
+        .parent{
+            width: 1000px;
+        }
+        .footer{
+            padding: 20px 0;
+            background-color: #e0e0e0;
+        }
+        .footer h3{
+            width: 210px;
+            float: left;
+            background-color: #f9f9f9;
+            margin-left: 20px;
+            margin-right: 20px;
+            height: 50px;
+            text-align: center;
+            float: left;
+            padding-top: 15px;
+        }               
+       
+        .clear{
+            clear: both;
+        }
+    </style>    
+</head>
+
+<body>
+    <div class="parent">
+        <div class="header">
+            <h3>Шапка страницы</h3>
+        </div>
+        <div class="wrap">
+            <div class="main">
+                <h3>Основная часть</h3>
+                <div class="main-block main-block-left"><h3>Блок1</h3></div>
+                <div class="main-block main-block-right"><h3>Блок2</h3></div>
+                <div class="main-block main-block-bottom"><h3>Блок3</h3></div>
+    
+            </div>
+            <div class="sidebar">
+                <h3>Боковая часть</h3>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="footer">
+            <h3>Секция футера 1</h3>
+            <h3>Секция футера 2</h3>
+            <h3>Секция футера 3</h3>
+            <h3>Секция футера 4</h3>
+            <div class="clear"></div>
+        </div>
+        
+    </div>
+    
+</body>
+
+</html>
