@@ -18,7 +18,7 @@
         div.level2{
             width: 150px;
             display: none;
-            transition 1s;
+            
             
         }
         div.level2 > div{
@@ -30,6 +30,7 @@
             
         }
         div.level1 > div:hover div.level2{
+            transition: 1s;
             display: block;
             position: relative;            
             z-index: 1;
@@ -38,6 +39,16 @@
         div:hover{
             background-color: green;
         }
+        @media all and (max-width:930px){
+            .level0{
+                float: none;
+                width: 450px;
+            }
+            div{
+                width: 450px;
+            }
+        }
+
         
 
 
