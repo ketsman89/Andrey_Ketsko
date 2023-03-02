@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100000px;
+        }
+        h1 + p{
+            color: red;
+        }
+        h1 ~ p{
+            font-style: italic;
+        }
+        div > span{
+            color: blue;
+        }
+        [type=text]{
+            border: 2px solid red;
+        }
+        [type=email]{
+            border: 2px solid blue;
+        }
+        [type=number]{
+            border: 2px solid green;
+        }
+        [type=password]{
+            border: 2px solid orange;
+        }
+        /* a[href^="http"]{
+            color: red;
+        }
+        a[href^="https"]{
+            color: green;
+        }
+        a[href$="by/"]{
+            font-weight: bold;
+        }
+        a[href$="ru/"]{
+            font-style: italic;
+        }
+        a[href$="8080/"]{
+            font-weight: bold;
+            text-decoration: line-through;
+        }
+        a[href*=aliexpress]{
+            text-transform: uppercase;
+        } */
+        p::first-letter{
+            font-size: 50px;
+        }
+        p::first-line{
+            color: red;
+            text-decoration: underline;
+        }
+        p::selection{
+            background-color: black;
+            color: green;
+        }
+        .planet{
+            counter-reset: planet;
+        }
+        .planet li::before{
+            counter-increment: planet +1;
+            content: "Планета " counter(planet) ": ";
+        }
+
+        a:link{
+            color: orange;
+        }
+        a:visited{
+            color:green
+        }
+        a:active{
+            font-weight: 900;            
+        }
+        a:focus{
+            font-style: italic;
+        }
+        a:hover{
+            background-color: blueviolet;
+        }
+        /* li:first-child{
+            background: #333;
+            color: #fff;
+        }
+        li:last-child{
+            background: #333;
+            color: #fff;
+        } */
+            li:nth-child(even){
+            background: #333;
+            color: #fff;
+            }
+    </style>
+</head>
+<body>
+    
+    <h1>text</h1>
+
+    
+
+    <p>world</p>
+    <p>hello</p>
+    <h2>test</h2>
+    <p class="vip">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, rem. Alias tempore ipsum similique natus rem voluptate repellat accusantium fugiat error voluptatum, vel velit dolores totam dolorem repellendus aliquam consectetur?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo fugiat eos, vitae sequi itaque quidem at omnis aspernatur aut ab eveniet iusto totam ipsum doloremque nemo ducimus tempore. Officia, est.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut odio laborum accusantium, repellendus praesentium at maiores deserunt aliquid voluptatibus obcaecati sunt aliquam dolorum cum assumenda molestiae eius sed cupiditate a.</p>
+
+    <hr>
+
+    <span>span1</span>
+
+    <div>
+        <span>span2</span>
+
+        <p>
+            <span>span3</span>
+        </p>
+    </div>
+
+    <hr>
+
+    <input type="text"><br>
+    <input type="email" title="hello1"><br>
+    <input type="number"><br>
+    <input type="password" title="hello"><br>
+
+    <hr>
+
+    <a href="https://av.by/">av.by</a><br>
+    <a href="https://aliexpress.ru/111">aliexpress.ru</a><br>
+    <a href="http://142.93.172.35:8080/">142.93.172.35:8080</a>
+
+    <hr>
+
+    <ul class="planet">
+        <li>Венера</li>
+        <li>Земля</li>
+        <li>Марс</li>
+        <li>Юпитер</li>
+        <li>Сатурн</li>
+        <li>Нептун</li>
+        <li>Уран</li>
+        <li>Меркурий</li>
+    </ul>
+
+</body>
+</html>
