@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Специальные селекторы</title>
+    <style>
+        h1+p {
+            color: red;
+        }
+
+        h1~p {
+            font-style: italic;
+        }
+        div > span{
+            color: blue;
+        }
+        [title=hello]{
+            border: 2px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>text</h1>
+    <p class="vip">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum, sed! Vero iure, necessitatibus
+        facere magni architecto porro? Blanditiis, nihil aspernatur. Ullam officiis debitis quaerat optio sequi tempore
+        quia repellendus officia.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quisquam delectus labore, ad quam velit magni
+        assumenda maxime, iste, natus ex provident aliquam hic rem fuga tempora cumque consequatur exercitationem?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim ullam impedit unde non dolorum quas rerum tempora
+        quam adipisci repellendus, quis explicabo deserunt esse neque nostrum quasi sunt possimus architecto.</p>
+
+    <hr>
+    <span>span1</span>
+
+    <div>
+        <span>span2</span>
+
+        <p>
+            <span>span3</span>
+        </p>
+    </div>
+    <hr>
+
+    <input type="text"><br>
+    <input type="email" title="hellol"><br>
+    <input type="number"><br>
+    <input type="password" title="hello"><br>
+</body>
+
+
+</html>
