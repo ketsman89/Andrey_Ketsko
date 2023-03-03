@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            display: flex;
+            flex-direction: column;
+            
+        }
+        .content{
+            display: flex;
+            flex-direction: row;
+            background-color: #dbdbdb;
+        }
+        .articles{
+            display: flex;
+            flex-direction: column;
+        }
+        .article{
+            border-style: solid 1px black;
+            background-color: #aaaaaa;
+            margin-bottom: .2em;
+        }
+        .navi{
+            width: 15em;
+            /* не делается шире в браузере */
+            height: fit-content;
+            background-color: #cccccc;
+        }
+        .footer{
+            background: #cccccc;
+            height: fit-content;
+            margin-top: .2em;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="main">
+        <div class="content">
+            <div class="navi">
+                <h2>Блок навигации</h2>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti aperiam laudantium soluta? Quos deleniti exercitationem natus ad. Laudantium animi quas impedit accusamus reiciendis, molestiae, nisi dignissimos est totam illum aspernatur!
+            </div>
+            <div class="articles">
+                <div class="article">
+                    <h2>Статья 1</h2>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi animi quos rerum cumque perspiciatis soluta fuga alias? Asperiores voluptatibus impedit deserunt, sint suscipit odit! Error iusto non numquam perspiciatis provident.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quia sed enim. Magni officiis ipsam dolore animi vitae sed vel culpa, voluptates modi perferendis est iusto harum totam error? Pariatur!
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. At minus ab illo! Magnam voluptates beatae nesciunt qui modi repellendus. Beatae eaque, dolorum dicta ab reiciendis praesentium quis ratione iste quaerat.
+                </div>
+                <div class="article">
+                    <h2>Статья 2</h2>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore dolor commodi, officiis corrupti, placeat, excepturi quas quae assumenda eum ullam iure perferendis ducimus dicta reiciendis sunt eveniet asperiores fuga consectetur.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo architecto quae sit exercitationem soluta voluptate fugit perspiciatis! Soluta deserunt, exercitationem officiis alias enim quam? Recusandae quidem iure dolor porro itaque!
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum repellat nam rem repellendus nisi quidem laborum corrupti laboriosam facilis id ullam accusamus dolores, adipisci, beatae ad ab assumenda. Enim, perferendis.
+                    <img src="../../BASE/pic.PNG" alt="pic" align="right">
+                </div>
+            </div>
+        </div>
+        <div class="footer">Footer</div>
+    </div>
+
+</body>
+</html>
