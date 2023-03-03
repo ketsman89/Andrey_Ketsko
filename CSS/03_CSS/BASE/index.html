@@ -17,12 +17,15 @@
         }
         div.level2{
             width: 150px;
-            display: none;
+            height: 0;
+            /* display: none; */
+            overflow: hidden;
+
             
             
         }
         div.level2 > div{
-            background-color: #d3d3d3;
+            background-color: #f9d3d3;
             border: solid black 1px;
             cursor: pointer;
             
@@ -31,9 +34,12 @@
         }
         div.level1 > div:hover div.level2{
             transition: 1s;
-            display: block;
+            width: 150px;
+            /* display: block; */
             position: relative;            
             z-index: 1;
+            height: 58px;
+            /* как сделать  автоматом нужную высоту, но чтобы работала плавность( при fit-content yt hf,jnftn)? */
             
         }
         div:hover{
@@ -42,10 +48,14 @@
         @media all and (max-width:930px){
             .level0{
                 float: none;
-                width: 450px;
+                width: 100%;
             }
             div{
-                width: 450px;
+                width: 100%;
+            }
+            div.level1 > div:hover div.level2{
+                width: 100%;
+                
             }
         }
 

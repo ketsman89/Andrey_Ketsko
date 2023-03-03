@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04_CSS_BASE_01</title>
+    <style>
+        li a:hover::after{
+            content: url(list.jfif);
+        }
+        div{
+            border: 1px grey solid ;
+            border-radius: 1em/1em 0;
+        }
+        div a:hover::before{
+            content: url(link.png);
+        }
+        /* как сделать конкретные картинки невидимыми, наприсер link.png display=none */
+    </style>
+</head>
+<body>
+    <h1>Форматы файлов</h1>
+    <div>
+        .DOC или .doc (от английского <img src="link.png" alt="link"><a href="">document</a>) - расширение имени файла, используемое для файлов, представляющих текст, с разметкой или без. Расширение .DOC часто использовалось для обозначения простых текстовых файлов без формирования, однако позже стало использоваться для двоичных форматов с разметкой. <br>
+        <a href="">Документ MS World</a><img src="word.jfif" alt="word">
+    </div>
+    <div>
+        Portable Document Format ( <img src="link.png" alt="link"><a href="">PDF</a> ) - межплатформенный формат электронных документов, разработанный фирмой Adobe Systems с использованием ряда возможностей языка Postscript. <br>
+        <a href="">Документ PDF</a><img src="pdf.png" alt="pdf">
+    </div>
+    <div>
+        ZIP - популярный формат сжатия данных и архивации файлов. Файл в этом формате обычно имеет расширение <img src="link.png" alt="link"><a href="">.zip</a> и хранит в сжатом или несжатом виде один или несколько файлов, которое можно из него извлечь путём распаковки с помощью специальной программы. <br>
+        <a href="">Архив</a><img src="zip.gif" alt="zip">
+    </div>
+    <h2>Это списко файлов</h2>
+    <ul style="list-style-image: url(list.jfif) ;">
+        <li><a href="">Документ MS World</a></li>
+        <li><a href="">Документ PDF</a></li>
+        <li><a href="">Архив</a></li>
+    </ul>
+</body>
+</html>
