@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        th {
+            background-color: grey;
+        }
+
+        td {
+            border-right: 2px dotted;
+        }
+
+        tr {
+            border-bottom: 2px dotted;
+        }
+
+        /* не появляется граница внизу строк */
+        tr:nth-child(odd) {
+            background-color: rgba(128, 128, 128, 0.404);
+        }
+
+        tr:hover {
+            background-color: aqua;
+        }
+
+        td:nth-child(6) {
+            border-right: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table>
+        <tr id="fio">
+            <th>ФИО</th>
+            <th>пол</th>
+            <th>должность</th>
+            <th>дата рож.</th>
+            <th>Данные 01</th>
+            <th>Данные 02</th>
+        </tr>
+        <tr id="ivanov">
+            <td>Иванов Иван Иванович</td>
+            <td>М</td>
+            <td>Начальник</td>
+            <td>01.01.1960</td>
+            <td>4567</td>
+            <td>3453</td>
+        </tr>
+        <tr id="petrov">
+            <td>Петрова Илона Петровна</td>
+            <td>Ж</td>
+            <td>Секретарь</td>
+            <td>01.01.1989</td>
+            <td>98795</td>
+            <td>46523</td>
+        </tr>
+        <tr id="sidorov">
+            <td>Сидоров Илья Игоревич</td>
+            <td>М</td>
+            <td>Бухгалтер</td>
+            <td>01.01.1979</td>
+            <td>743434</td>
+            <td>9232379</td>
+        </tr>
+        <tr id="pupin">
+            <td>Пупин Фёдор Фёдорович</td>
+            <td>М</td>
+            <td>Водитель</td>
+            <td>01.01.1963</td>
+            <td>74323434</td>
+            <td>9232379</td>
+        </tr>
+        <tr id="krupin">
+            <td>Крупин Сергей Иванович</td>
+            <td>М</td>
+            <td>Водитель 2</td>
+            <td>01.01.1983</td>
+            <td>3234534</td>
+            <td>923123379</td>
+        </tr>
+    </table>
+
+    <button style="background-color: blue;">Показать строки</button>
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script>
+        $('#fio').click(function () {
+            $('#fio').hide();
+        })
+        $('#ivanov').click(function () {
+            $('#ivanov').hide();
+        })
+        $('#petrov').click(function () {
+            $('#petrov').hide();
+        })
+        $('#sidorov').click(function () {
+            $('#sidorov').hide();
+        })
+        $('#pupin').click(function () {
+            $('#pupin').hide();
+        })
+        $('#krupin').click(function () {
+            $('#krupin').hide();
+        })
+        $('button').click(function () {
+            $('tr').show()
+        })
+        if($('tr').is(':visible')) {
+            $('button').text('строки показаны').css('backgroundColor', 'aqua')
+        }
+        if($('fio').is(':hide'))(function() {
+            $('button').css('backgroundColor', 'red')
+        })
+    </script>
+</body>
+
+</html>
