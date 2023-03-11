@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
+
+
+</head>
+
+<body>
+    <form action="">
+        <input type="password" id='pass1'>-Введите пароль<br>
+        <input type="password" id='pass2'>-Повторите пароль<br>
+        <input type="submit">
+    </form>
+    
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script>
+        $("#pass2").keyup(function () {
+            var pas1 = $("#pass1").val();
+            var pas2 = $("#pass2").val();
+            if (pas1 == pas2) {
+                $('input[type=password]').css('backgroundColor', 'green');
+            }
+            else {
+                $('input[type=password]').css('backgroundColor', 'red');
+            }            
+        });
+        
+    </script>
+</body>
+
+</html>
